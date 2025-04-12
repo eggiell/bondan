@@ -1,11 +1,9 @@
-/* Reset dasar */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  
-  /* Body utama */
+
   body {
     font-family: 'Courier New', monospace;
     background: linear-gradient(145deg, #0c0c1e, #000);
@@ -13,10 +11,9 @@
     background-attachment: fixed;
     color: #ffffff;
     line-height: 1.6;
-    animation: gradientBackground 10s ease infinite; /* Efek gradient animasi */
+    animation: gradientBackground 10s ease infinite;
   }
-  
-  /* Efek animasi untuk gradient background */
+
   @keyframes gradientBackground {
     0% {
       background-position: 0% 50%;
@@ -28,19 +25,17 @@
       background-position: 0% 50%;
     }
   }
-  
-  /* Header & Navbar */
+
   header {
-    background-color: rgba(0, 0, 0, 0.7); /* Tambahkan transparansi untuk efek glow */
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 1.5rem;
     text-align: center;
-    border-bottom: 2px solid #00ffff; /* Biru neon */
-    box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff; /* Neon glow biru */
+    border-bottom: 2px solid #00ffff; 
+    box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
   }
-  
-  /* Neon Teks (Putih) */
+
   .neon-text {
-    color: #ffffff; /* Teks putih neon */
+    color: #ffffff;
     text-shadow:
       0 0 5px #ffffff,
       0 0 10px #ffffff,
@@ -60,8 +55,7 @@
   .flicker {
     animation: flicker 2s infinite;
   }
-  
-  /* Navbar */
+
   nav ul {
     list-style: none;
     display: flex;
@@ -76,7 +70,7 @@
   }
   
   .neon-link {
-    color: #ffffff; /* Teks link putih neon */
+    color: #ffffff;
     text-shadow:
       0 0 4px #ffffff,
       0 0 8px #ffffff;
@@ -84,25 +78,23 @@
   }
   
   .neon-link:hover {
-    color: #ff00ff; /* Pink neon */
+    color: #ff00ff;
   }
-  
-  /* Hero Section */
+ 
   .hero {
     padding: 4rem 2rem;
     text-align: center;
-    background: linear-gradient(145deg, #ff00ff, #00ffff); /* Pink to blue neon gradient */
+    background: linear-gradient(145deg, #ff00ff, #00ffff);
     background-size: 400% 400%;
-    animation: gradientBackground 10s ease infinite; /* Neon gradient */
+    animation: gradientBackground 10s ease infinite;
     box-shadow: 0 0 15px #ff00ff, 0 0 30px #ff00ff, 0 0 60px #00ffff;
     border-radius: 8px;
   }
   
-  /* Neon Button */
   .neon-button {
     background-color: transparent;
-    border: 2px solid #ff00ff; /* Pink neon */
-    color: #ff00ff; /* Pink neon */
+    border: 2px solid #ff00ff;
+    color: #ff00ff;
     padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;
@@ -125,8 +117,7 @@
       0 0 20px #ff00ff,
       0 0 40px #ff00ff;
   }
-  
-  /* Footer */
+
   footer {
     background-color: #111;
     padding: 1rem;
@@ -134,6 +125,6 @@
     color: #888;
     font-size: 0.9rem;
     margin-top: 4rem;
-    box-shadow: 0 0 15px #ff00ff; /* Pink neon glow */
+    box-shadow: 0 0 15px #ff00ff;
   }
   
