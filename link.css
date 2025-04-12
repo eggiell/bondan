@@ -22,8 +22,7 @@
     z-index: 1;
     color: white;
   }
-  
-  /* Border neon animasi yang muter */
+
   .card::before {
     content: '';
     position: absolute;
@@ -44,8 +43,7 @@
     z-index: -2;
     filter: blur(3px);
   }
-  
-  /* Lapisan hitam biar isi card gak keganggu neon */
+
   .card::after {
     content: '';
     position: absolute;
