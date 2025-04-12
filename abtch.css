@@ -1,0 +1,91 @@
+#about-channel {
+  padding: 3rem;
+  color: white;
+  background-color: #001f3f; /* base: blue ocean night */
+  background-image:
+    radial-gradient(circle at top left, #00ffff33, transparent 60%),
+    radial-gradient(circle at bottom right, #ff00ff33, transparent 60%);
+  box-shadow:
+    inset 0 0 60px #00ffff22,
+    inset 0 0 30px #ff00ff22;
+  border-radius: 12px;
+  border: 1px solid #00ffff55;
+}
+
+#about-channel h2 {
+  font-size: 2.5rem;
+  color: #00ffff;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 10px #00ffffaa; /* neon effect */
+}
+
+/* === CARD STYLE DENGAN NEON WARNA-WARNI === */
+.card {
+  background-color: #212121;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  animation: neonCardGlow 6s infinite alternate;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  z-index: -1;
+  background: radial-gradient(circle at center, #00ffff33, transparent 60%);
+  filter: blur(20px);
+  animation: neonPulse 4s infinite alternate;
+  opacity: 0.6;
+  border-radius: 12px;
+}
+
+@keyframes neonCardGlow {
+  0% { box-shadow: 0 0 15px #00ffff55; }
+  25% { box-shadow: 0 0 15px #ff00ff55; }
+  50% { box-shadow: 0 0 15px #ffff0055; }
+  75% { box-shadow: 0 0 15px #00ff0055; }
+  100% { box-shadow: 0 0 15px #00ffff55; }
+}
+
+@keyframes neonPulse {
+  0% { background: radial-gradient(circle at center, #00ffff33, transparent 60%); }
+  25% { background: radial-gradient(circle at center, #ff00ff33, transparent 60%); }
+  50% { background: radial-gradient(circle at center, #ffff0033, transparent 60%); }
+  75% { background: radial-gradient(circle at center, #00ff0033, transparent 60%); }
+  100% { background: radial-gradient(circle at center, #00ffff33, transparent 60%); }
+}
+
+/* === HEADINGS DAN TEKS DI DALAM CARD === */
+.card h3 {
+  color: #ffff00; /* neon yellow */
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card p,
+.card ul {
+  color: white;
+  font-size: 1rem;
+}
+
+.vibe-card {
+  border: 2px solid #00ffff; /* neon cyan border */
+}
+
+.rules-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.rules-card li {
+  margin: 10px 0;
+  font-style: italic;
+}

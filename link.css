@@ -1,0 +1,95 @@
+#link-resources {
+    padding: 3rem;
+    background-color: #001f3f;
+    color: white;
+    text-align: center;
+  }
+  
+  #link-resources h2 {
+    font-size: 2.5rem;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffffaa;
+    margin-bottom: 2rem;
+  }
+  
+  .card {
+    position: relative;
+    background-color: #212121;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 12px;
+    overflow: hidden;
+    z-index: 1;
+    color: white;
+  }
+  
+  /* Border neon animasi yang muter */
+  .card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    border-radius: 14px;
+    background: conic-gradient(
+      from 0deg,
+      #00ffff,
+      #ff00ff,
+      #00ff00,
+      #ffff00,
+      #00ffff
+    );
+    animation: spinNeon 6s linear infinite;
+    z-index: -2;
+    filter: blur(3px);
+  }
+  
+  /* Lapisan hitam biar isi card gak keganggu neon */
+  .card::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    background-color: #212121;
+    border-radius: 10px;
+    z-index: -1;
+  }
+  
+  @keyframes spinNeon {
+    0% {
+      transform: rotate(0turn);
+    }
+    100% {
+      transform: rotate(1turn);
+    }
+  }
+  
+  .card h3 {
+    color: #ffff00;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card p {
+    font-size: 1rem;
+  }
+  
+  .card a {
+    color: #00ffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    display: inline-block;
+    text-shadow: 0 0 10px #00ffffaa;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card a:hover {
+    color: #ff00ff;
+    text-shadow: 0 0 15px #ff00ff;
+  }
+  

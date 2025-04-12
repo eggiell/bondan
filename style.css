@@ -1,0 +1,139 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body utama */
+  body {
+    font-family: 'Courier New', monospace;
+    background: linear-gradient(145deg, #0c0c1e, #000);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    line-height: 1.6;
+    animation: gradientBackground 10s ease infinite; /* Efek gradient animasi */
+  }
+  
+  /* Efek animasi untuk gradient background */
+  @keyframes gradientBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Header & Navbar */
+  header {
+    background-color: rgba(0, 0, 0, 0.7); /* Tambahkan transparansi untuk efek glow */
+    padding: 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid #00ffff; /* Biru neon */
+    box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff; /* Neon glow biru */
+  }
+  
+  /* Neon Teks (Putih) */
+  .neon-text {
+    color: #ffffff; /* Teks putih neon */
+    text-shadow:
+      0 0 5px #ffffff,
+      0 0 10px #ffffff,
+      0 0 20px #ffffff,
+      0 0 40px #ffffff;
+  }
+  
+  @keyframes flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      opacity: 1;
+    }
+    20%, 24%, 55% {
+      opacity: 0.4;
+    }
+  }
+  
+  .flicker {
+    animation: flicker 2s infinite;
+  }
+  
+  /* Navbar */
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  nav a {
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .neon-link {
+    color: #ffffff; /* Teks link putih neon */
+    text-shadow:
+      0 0 4px #ffffff,
+      0 0 8px #ffffff;
+    transition: color 0.2s ease;
+  }
+  
+  .neon-link:hover {
+    color: #ff00ff; /* Pink neon */
+  }
+  
+  /* Hero Section */
+  .hero {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: linear-gradient(145deg, #ff00ff, #00ffff); /* Pink to blue neon gradient */
+    background-size: 400% 400%;
+    animation: gradientBackground 10s ease infinite; /* Neon gradient */
+    box-shadow: 0 0 15px #ff00ff, 0 0 30px #ff00ff, 0 0 60px #00ffff;
+    border-radius: 8px;
+  }
+  
+  /* Neon Button */
+  .neon-button {
+    background-color: transparent;
+    border: 2px solid #ff00ff; /* Pink neon */
+    color: #ff00ff; /* Pink neon */
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-shadow:
+      0 0 5px #ff00ff,
+      0 0 10px #ff00ff;
+    box-shadow:
+      0 0 5px #ff00ff,
+      0 0 10px #ff00ff,
+      0 0 20px #ff00ff;
+    transition: all 0.3s ease-in-out;
+    border-radius: 6px;
+  }
+  
+  .neon-button:hover {
+    background-color: #ff00ff;
+    color: #000;
+    box-shadow:
+      0 0 10px #ff00ff,
+      0 0 20px #ff00ff,
+      0 0 40px #ff00ff;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #111;
+    padding: 1rem;
+    text-align: center;
+    color: #888;
+    font-size: 0.9rem;
+    margin-top: 4rem;
+    box-shadow: 0 0 15px #ff00ff; /* Pink neon glow */
+  }
+  

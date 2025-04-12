@@ -1,0 +1,92 @@
+#update-kehidupan {
+    padding: 3rem;
+    background-color: #000000; /* Biar full item */
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    margin: 3rem auto;
+    max-width: 1000px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #update-kehidupan::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    background: linear-gradient(45deg, #00ffff, #ff00ff, #00ffff, #ff00ff);
+    background-size: 400% 400%;
+    animation: animateNeonBorder 8s linear infinite;
+    border-radius: 20px;
+    filter: blur(8px);
+  }
+  
+  @keyframes animateNeonBorder {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  #update-kehidupan h2 {
+    font-size: 2.5rem;
+    color: #00ffff;
+    text-shadow: 0 0 15px #00ffffaa;
+    margin-bottom: 2rem;
+  }
+  
+  .update-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    background-color: #111111; /* Hitam dalam kotak */
+    border-radius: 12px;
+    box-shadow: 0 0 15px #00ffff55;
+    padding: 2rem;
+    transition: 0.3s;
+  }
+  
+  .update-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px #ff00ff99;
+  }
+  
+  .update-content {
+    flex: 1;
+    padding-right: 1.5rem;
+  }
+  
+  .update-content h3 {
+    color: #ffff00;
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .update-content p {
+    font-size: 1rem;
+    color: white;
+  }
+  
+  .foto-update {
+    max-width: 280px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .foto-update img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+  
